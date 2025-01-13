@@ -1,0 +1,15 @@
+{
+  "name": "@strapi/plugin-superfields",
+  "version": "0.1.0",
+  "description": "Enhance your components with super fields",
+  "strapi": {
+    "name": "superfields",
+    "displayName": "Super Fields",
+    "description": "Enhance your components with super fields",
+    "kind": "plugin"
+  },
+  "author": {
+    "name": "NewProWeb<Abror Abdullaev>",
+    "email": "abror.abdullaev@newproweb.com"
+  }
+}
