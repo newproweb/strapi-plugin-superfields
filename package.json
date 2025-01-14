@@ -11,5 +11,23 @@
   "author": {
     "name": "NewProWeb<Abror Abdullaev>",
     "email": "abror.abdullaev@newproweb.com"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newproweb/strapi-plugin-superfields.git"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.0.0"
+  },
+  "maintainers": [
+    {
+      "name": "NewProWeb Community",
+      "email": "abror.abdullaev@newproweb.com"
+    }
+  ],
+  "engines": {
+    "node": ">=12.x. <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
 }
