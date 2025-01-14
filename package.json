@@ -1,5 +1,5 @@
 {
-  "name": "@strapi/plugin-superfields",
+  "name": "strapi-plugin-superfields",
   "version": "0.1.0",
   "description": "Enhance your components with super fields",
   "strapi": {
