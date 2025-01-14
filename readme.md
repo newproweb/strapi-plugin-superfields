@@ -4,8 +4,6 @@
 
 This plugin adds list of new custom fields in strapi to make the content editing more comfortable
 
-##
-
 ## Added Custom Fields
 
 ### 1. Comment Field
