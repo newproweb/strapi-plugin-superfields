@@ -312,16 +312,6 @@
   "resolved" "https://registry.npmjs.org/@emotion/weak-memoize/-/weak-memoize-0.4.0.tgz"
   "version" "0.4.0"
 
-"@esbuild/linux-x64@0.21.5":
-  "integrity" "sha512-1rYdTpyv03iycF1+BhzrzQJCdOuAOtaqHTWJZCWvijKD2N5Xu0TtVC8/+1faWqcP9iBCWOmjmhoH94dH82BxPQ=="
-  "resolved" "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.21.5.tgz"
-  "version" "0.21.5"
-
-"@esbuild/linux-x64@0.25.2":
-  "integrity" "sha512-QInHERlqpTTZ4FRB0fROQWXcYRD64lAoiegezDunLpalZMjcUcld3YzZmVJ2H/Cp0wJRZ8Xtjtj0cEHhYc/uUg=="
-  "resolved" "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.25.2.tgz"
-  "version" "0.25.2"
-
 "@esbuild/win32-x64@0.21.5":
   "integrity" "sha512-tQd/1efJuzPC6rCFwEvLtci/xNFcTZknmXs98FYDfGE4wP9ClFV98nyKrzJKVPMhdDnjzLhdUyMX4PsQAPjwIw=="
   "resolved" "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz"
@@ -1218,11 +1208,6 @@
   "resolved" "https://registry.npmjs.org/@remix-run/router/-/router-1.23.0.tgz"
   "version" "1.23.0"
 
-"@rollup/rollup-linux-x64-gnu@4.39.0":
-  "integrity" "sha512-t9jqYw27R6Lx0XKfEFe5vUeEJ5pF3SGIM6gTfONSMb7DuG6z6wfj2yjcoZxHg129veTqU7+wOhY6GX8wmf90dA=="
-  "resolved" "https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.39.0.tgz"
-  "version" "4.39.0"
-
 "@rollup/rollup-win32-x64-msvc@4.39.0":
   "integrity" "sha512-yAkUOkIKZlK5dl7u6dg897doBgLXmUHhIINM2c+sND3DZwnrdQkkSiDh7N75Ll4mM4dxSkYfXqU9fW3lLkMFug=="
   "resolved" "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.39.0.tgz"
@@ -1864,11 +1849,6 @@
     "preferred-pm" "3.1.2"
     "yup" "0.32.9"
     "zod" "^3.22.4"
-
-"@swc/core-linux-x64-gnu@1.11.18":
-  "integrity" "sha512-h9a/8PA25arMCQ9t8CE8rA1s0c77z4kCZZ7dUuUkD88yEXIrARMca1IKR7of+S3slfQrf1Zlq3Ac1Fb1HVJziQ=="
-  "resolved" "https://registry.npmjs.org/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.11.18.tgz"
-  "version" "1.11.18"
 
 "@swc/core-win32-x64-msvc@1.11.18":
   "integrity" "sha512-8USTRcdgeFMNBgvVXl8tz6n4+9s9m+zHsfDeBT4jPgwnq2bnLBlTUlwnPwzDxfg9nUJr6RFD4xeKfWyZZRosZg=="
