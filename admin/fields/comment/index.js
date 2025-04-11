@@ -1,17 +1,17 @@
 import { Discuss } from "@strapi/icons";
+import pluginPk from "../../../package.json";
 
 export default {
-  name: "comment",
-  pluginId: "superfields",
-  type: "text",
+  name: pluginPk.name,
+  pluginId: pluginPk.strapi.name,
+  type: "string",
   icon: Discuss,
-  components: { Input: async () => import("../../components/comment") },
   intlLabel: {
-    id: "superfields.field.comment.label",
+    id:`${pluginPk.strapi.name}.${pluginPk.name}.field.label`,
     defaultMessage: "Comment"
   },
   intlDescription: {
-    id: "superfields.field.comment.description",
+    id: `${pluginPk.strapi.name}.${pluginPk.name}.field.description`,
     defaultMessage: "Simple comment without any input. User as private field, and only in admin itself"
   },
   options: {
@@ -22,14 +22,14 @@ export default {
         defaultValue: "",
         type: "textarea",
         intlLabel: {
-          id: "superfields.field.comment.comment.label",
+          id: `${pluginPk.strapi.name}.${pluginPk.name}.field.label`,
           defaultMessage: "Comment"
         }
       },
       {
         name: "options.variant",
         intlLabel: {
-          id: "superfields.field.comment.variant.label",
+          id:  `${pluginPk.strapi.name}.${pluginPk.name}.field.variant.label`,
           defaultMessage: "Color variant"
         },
         type: "select",
@@ -41,7 +41,7 @@ export default {
             value: "success",
             metadatas: {
               intlLabel: {
-                id: "superfields.field.comment.variant.option.success.label",
+                id: `${pluginPk.strapi.name}.${pluginPk.name}.field.variant.option.success.label`,
                 defaultMessage: "Success"
               }
             }
@@ -51,7 +51,7 @@ export default {
             value: "warning",
             metadatas: {
               intlLabel: {
-                id: "superfields.field.comment.variant.option.warning.label",
+                id: `${pluginPk.strapi.name}.${pluginPk.name}.field.variant.option.warning.label`,
                 defaultMessage: "Warning"
               }
             }
@@ -62,7 +62,7 @@ export default {
             value: "error",
             metadatas: {
               intlLabel: {
-                id: "superfields.field.comment.variant.option.error.label",
+                id: `${pluginPk.strapi.name}.${pluginPk.name}.field.variant.option.error.label`,
                 defaultMessage: "Error"
               }
             }
@@ -83,16 +83,18 @@ export default {
             defaultValue: true,
             disabled: true,
             intlLabel: {
-              id: "superfields.field.comment.private.label",
+              id:`${pluginPk.strapi.name}.${pluginPk.name}.field.private.label`,
               defaultMessage: "Private Field",
             },
             intlDescription: {
-              id: "superfields.field.comment.private.description",
+              id: `${pluginPk.strapi.name}.${pluginPk.name}.field.private.description`,
               defaultMessage: "This field is shown up in API response",
             }
           }
         ]
       },
     ],
-  }
+  },
+  components: { Input: async () => import("../../components/comment") }
+
 }
