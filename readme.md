@@ -6,6 +6,30 @@ This plugin adds list of new custom fields in strapi to make the content editing
 
 ## Added Custom Fields
 
+---
+
+## 📦 Installation Guide
+
+> 💡 **Note:**  
+> If you simply run `npm install strapi-plugin-superfields`, it will install the version for **Strapi v5** by default.  
+> To use this plugin with **Strapi v4**, make sure to install version `^4` explicitly.
+
+---
+
+<summary>📘 <strong>Installation by Strapi Version</strong> (click to expand)</summary>
+
+<br/>
+
+| ⚙️ Strapi Version | 📦 Plugin Version                  | 🧪 npm Command                                       | 🧪 yarn Command                                      |
+|------------------|-----------------------------------|------------------------------------------------------|-----------------------------------------------------|
+| ✅ Strapi v5      | `strapi-plugin-superfields`       | `npm install strapi-plugin-superfields`             | `yarn add strapi-plugin-superfields`          |
+| ⚠️ Strapi v4      | `strapi-plugin-superfields@4.1.1` | `npm install strapi-plugin-superfields@^4`       | `yarn add strapi-plugin-superfields@^4`          |
+
+
+---
+
+
+
 ### 1. Comment Field
 
 ✔️ Used to leave a comment in admin to inform about something
