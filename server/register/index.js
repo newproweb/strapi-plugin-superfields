@@ -8,4 +8,10 @@ module.exports = ({ strapi }) => {
     plugin: pluginPkg.strapi.name,
     type: "string",
   });
+
+  strapi.customFields.register({
+    name:'tooltip-field',
+    plugin: pluginPkg.strapi.name,
+    type: "string",
+  })
 };

@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-superfields",
-  "version": "5.1.1",
+  "version": "5.2.1",
   "description": "Enhance your components with super fields",
   "strapi": {
     "name": "superfields",
@@ -29,5 +29,8 @@
     "node": ">=16.0.0",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react-intl": "^7.1.10"
+  }
 }
