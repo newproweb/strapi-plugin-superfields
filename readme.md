@@ -31,13 +31,11 @@ This plugin adds list of new custom fields in strapi to make the content editing
 
 ## Added Custom Fields
 
-## 🔗 Navigation
+## 🔗 Fields
 
 - [Comment Field](#1-comment-field)
 - [Tooltip Input Field](#2-tooltip-input-field)
-- [Why Use Tooltip Input Field?](#-why-use-tooltip-input-field)
-- [Planned Custom Fields](#planned-custom-fields)
-- [Issues](#issues)
+
 
 ---
 
