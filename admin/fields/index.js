@@ -1,3 +1,4 @@
 import commentField from "./comment";
+import tooltipField from "./tooltip";
 
-export default [commentField];
+export default [commentField, tooltipField];
