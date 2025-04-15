@@ -5,7 +5,7 @@ export default {
   pluginId: "superfields",
   type: "text",
   icon: Discuss,
-  components: { Input: async () => import("../../components/comment") },
+  components: { Input: async () => import("../../components/comment.js") },
   intlLabel: {
     id: "superfields.field.comment.label",
     defaultMessage: "Comment"

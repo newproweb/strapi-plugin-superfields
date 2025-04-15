@@ -1,3 +1,4 @@
-import commentField from "./comment";
+import commentField from "./comment/index.js";
+import tooltipField from "./tooltip/index.js";
 
-export default [commentField];
+export default [commentField, tooltipField];

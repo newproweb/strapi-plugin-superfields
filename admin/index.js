@@ -1,8 +1,10 @@
 "use strict";
-import fields from "./fields";
+import fields from "./fields/index.js";
 
 export default {
   register(strapi) {
-    strapi.customFields.register(fields);
+    for (const field of fields) {
+      strapi.customFields.register(field);
+    }
   },
 };
