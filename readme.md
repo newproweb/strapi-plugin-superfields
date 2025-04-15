@@ -27,7 +27,6 @@ This plugin adds list of new custom fields in strapi to make the content editing
 
 ---
 
-## Added Custom Fields
 
 ## Added Custom Fields
 
