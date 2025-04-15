@@ -42,7 +42,6 @@ This plugin adds list of new custom fields in strapi to make the content editing
 ---
 
 
-
 ### 1. Comment Field
 
 ✔️ Used to leave a comment in admin to inform about something
