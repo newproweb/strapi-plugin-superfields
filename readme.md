@@ -104,7 +104,6 @@ Tooltip Input Field let you:
 - Reduce confusion for complex or optional fields
 
 
-
 ## Planned custom fields
 
 - ⚪ Tooltiped primitive fields (text, number, boolean) -- To add the description and the
