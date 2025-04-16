@@ -22,7 +22,7 @@ This plugin adds list of new custom fields in strapi to make the content editing
 | ⚙️ Strapi Version | 📦 Plugin Version                  | 🧪 npm Command                                       | 🧪 yarn Command                                      |
 |------------------|-----------------------------------|------------------------------------------------------|-----------------------------------------------------|
 | ✅ Strapi v5      | `strapi-plugin-superfields`       | `npm install strapi-plugin-superfields`             | `yarn add strapi-plugin-superfields`          |
-| ⚠️ Strapi v4      | `strapi-plugin-superfields@4.1.1` | `npm install strapi-plugin-superfields@^4`       | `yarn add strapi-plugin-superfields@^4`          |
+| ⚠️ Strapi v4      | `strapi-plugin-superfields@^4` | `npm install strapi-plugin-superfields@^4`       | `yarn add strapi-plugin-superfields@^4`          |
 
 
 ---
@@ -35,6 +35,7 @@ This plugin adds list of new custom fields in strapi to make the content editing
 - [Comment Field](#1-comment-field)
 - [Tooltip Input Field](#2-tooltip-input-field)
 - [Tooltip Number Input Field](#3-tooltip-number-input-field)
+- [Boolean Field](#4-boolean-field)
 
 
 ---
@@ -167,6 +168,68 @@ Using this field can improve your content editing experience by:
 - Reducing errors and confusion for content editors
 - Supporting validations to enforce rules
 - Enhancing usability through better documentation directly in the form
+
+
+       
+
+### 4. Boolean Field
+
+✔️ This custom field allows you to add a boolean toggle (yes/no) switch to your content type.  
+🎯 It’s useful for binary decisions like enabling/disabling features, flags, or simple true/false statuses.  
+📌 Easily integrates into your content editing workflow without writing custom logic.
+
+⚠️ This field supports API visibility control, validation, and advanced toggling logic.
+
+---
+
+#### ⚙️ Field Configuration
+
+Boolean Field includes simple yet effective settings:
+
+![Boolean Field Configuration](./docs/images/boolean-toggle-settings.jpg)
+
+- **Name** – The name of the field (used in the API)
+- **Label** – Display label in the admin panel
+- **Description** – Optional explanation under the toggle
+- **Default Value** – Set `true` or `false` as default state
+
+---
+
+#### 🧠 Advanced Settings
+
+Fine-tune your boolean field with advanced options:
+
+![Boolean Advanced Settings](./docs/images/boolean-toggle-advanced.jpg)
+
+- **Default Setting** – Set `true` or `false` or `null` as default state
+- **Private Field** – Hidden from API responses
+- **Required Field** – Must be explicitly selected
+- **Unique Field** – Ensure only one entry can have a specific value
+
+---
+
+#### ✅ How It Looks
+
+Here's how the Boolean Field appears in the Content Editor:
+
+![Boolean Result](./docs/images/boolean-toggle-result.jpg)
+
+- The toggle appears as a simple switch
+- Editors can enable or disable with one click
+- Help text and default values improve UX
+
+---
+
+#### 🤔 Why Use Boolean Field?
+
+Boolean Fields help you:
+
+- Add clear yes/no options for editors
+- Control feature toggles or flags easily
+- Improve editor clarity with description + default value
+- Simplify conditional logic in content workflows
+
+
 
 
 
