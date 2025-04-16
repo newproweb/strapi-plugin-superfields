@@ -14,4 +14,10 @@ module.exports = ({ strapi }) => {
     plugin: pluginPkg.strapi.name,
     type: "string",
   })
+
+  strapi.customFields.register({
+    name:'tooltip-number-field',
+    plugin: 'superfields',
+    type: "integer",
+  })
 };

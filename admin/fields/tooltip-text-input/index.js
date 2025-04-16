@@ -6,7 +6,7 @@ export default {
   pluginId: "superfields",
   type: "string",
   icon: RichText,
-  components: { Input: async () => import("../../components/tooltip") },
+  components: { Input: async () => import("../../components/tooltipTextInput") },
   intlLabel: {
     id: "superfields.text-input.label",
     defaultMessage: "Tooltip text input",
