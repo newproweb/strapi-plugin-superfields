@@ -18,4 +18,9 @@ module.exports = ({ strapi }) => {
     type: "integer",
   })
 
+  strapi.customFields.register({
+    name:'tooltip-boolean-field',
+    plugin: 'superfields',
+    type: "boolean",
+  })
 };
