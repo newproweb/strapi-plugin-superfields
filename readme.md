@@ -11,7 +11,7 @@ This plugin adds list of new custom fields in strapi to make the content editing
 
 - [Comment Field](#1-comment-field)
 - [Tooltip Input Field](#2-tooltip-input-field)
-
+- [Tooltip Number Input Field](#3-tooltip-number-input-field)
 
 ---
 
@@ -79,6 +79,68 @@ Tooltip Input Field let you:
 - Improve content accuracy and consistency
 - Reduce confusion for complex or optional fields
 
+
+### 3. Tooltip Number Input Field
+
+✔️ This custom field allows you to display **tooltips** on number input fields directly in the Content Manager.  
+🎯 It helps explain the purpose of a numeric field, providing inline guidance and improving the user experience for content editors.  
+📌 Especially useful when fields require specific formats or clarification.
+
+⚠️ This field is for **editorial use only** — tooltip messages are **not included in the API response**.
+
+---
+
+#### ⚙️ Field Configuration
+
+Tooltip Number Input Field provides flexible configuration options:
+
+![Tooltip Number Config](./docs/images/number-tooltip-config.jpg)
+
+- **Name** – The name of the field (no spaces allowed)
+- **Tooltip message content** – The message shown in the tooltip when hovering the (ℹ️) icon
+- **Field Description** – Optional description shown under the input field
+
+---
+
+#### 🧠 Advanced Settings
+
+Advanced options allow further validation and customization:
+
+![Advanced Settings](./docs/images/number-tooltip-advanced.jpg)
+
+- **Default Value** – Predefined number to be used as the default input
+- **Validation Regex** – Regular expression to validate specific numeric patterns
+- **Maximum Length** – Maximum allowed character length for the input
+- **Minimum Length** – Minimum character length required
+- **Private Field** – Field is hidden from API responses and only visible in the admin panel
+- **Required Field** – Field must be filled before submitting the form
+- **Unique Field** – Ensures the value is unique across all entries
+
+---
+
+#### ✅ How It Looks
+
+Here is how the Tooltip Number Input Field appears in the Content Editor:
+
+![Tooltip Number Result](./docs/images/number-tooltip-result.jpg)
+
+As shown above:
+
+- The field is clearly labeled and displays a helpful tooltip
+- A tooltip icon (`ⓘ`) shows contextual help on hover
+- An optional description is displayed below the input box
+- Default value can be pre-filled
+
+---
+
+#### 🤔 Why Use Tooltip Number Input Field?
+
+Using this field can improve your content editing experience by:
+
+- Providing contextual help for complex numeric fields
+- Reducing errors and confusion for content editors
+- Supporting validations to enforce rules
+- Enhancing usability through better documentation directly in the form
 
 
 

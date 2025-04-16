@@ -1,5 +1,8 @@
 import React from "react";
-import { TextInput, Tooltip } from "@strapi/design-system";
+import {
+  TextInput,
+  Tooltip,
+} from "@strapi/design-system";
 import { Information } from "@strapi/icons";
 import { useIntl } from "react-intl";
 
@@ -29,16 +32,14 @@ const TextInputComponent = ({
       {...(!!tooltipContent
         ? {
             labelAction: (
-              <Tooltip
-                description={attribute?.options["tooltip-content"] ?? ""}
-              >
-                <Information aria-hidden />
-              </Tooltip>
+                <Tooltip
+                  description={attribute?.options["tooltip-content"] ?? ""}
+                >
+                  <Information aria-hidden />
+                </Tooltip>
             ),
           }
         : {})}
-
-    
     />
   );
 };
