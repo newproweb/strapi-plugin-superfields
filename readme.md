@@ -36,6 +36,7 @@ This plugin adds list of new custom fields in strapi to make the content editing
 - [Tooltip Input Field](#2-tooltip-input-field)
 - [Tooltip Number Input Field](#3-tooltip-number-input-field)
 - [Boolean Field](#4-boolean-field)
+- [Tooltip Enum Field](#5-tooltip-enum-field)
 
 
 ---
@@ -228,6 +229,66 @@ Boolean Fields help you:
 - Control feature toggles or flags easily
 - Improve editor clarity with description + default value
 - Simplify conditional logic in content workflows
+
+
+### 5. Tooltip Enum Field
+
+✔️ This custom field allows you to define **enum values with tooltip support** directly in the Content Manager.  
+🎯 Useful for selecting predefined options while providing inline guidance to editors.  
+📌 Tooltips explain the purpose of the field and its options.
+
+⚠️ This field is for **editorial use only** — tooltip messages are **not included in the API response**.
+
+---
+
+#### ⚙️ Field Configuration
+
+The Tooltip Enum Field provides flexible configuration options:
+
+![Tooltip Enum Config](./docs/images/enum-settings.jpg)
+
+- **Name** – The name of the field (used in the API)
+- **Enum Values** – List of values, one per line (e.g. `Draft`, `Published`, `Archived`)
+- **Tooltip message content** – Message shown in the tooltip (ℹ️ icon)
+- **Field Description** – Optional text displayed below the input
+- **Default Value** – Select one of the enum values to use as default
+
+---
+
+#### 🧠 Advanced Settings
+
+Additional options are available for validation and API behavior:
+
+![Tooltip Enum Advanced](./docs/images/enum-advanced.jpg)
+
+- **Private Field** – Field will be hidden in API responses
+- **Required Field** – Field must be filled in before submitting the form
+- **Unique Field** – Ensures the value is unique across all entries
+
+---
+
+#### ✅ How It Looks
+
+Here’s how the Tooltip Enum Field appears in the Content Editor:
+
+![Tooltip Enum Result](./docs/images/enum-result.jpg)
+
+As shown above:
+
+- The field has a clear label and optional description
+- Tooltip icon (`ⓘ`) displays contextual help on hover
+- Editors can select from predefined enum values
+
+---
+
+#### 🤔 Why Use Tooltip Enum Field?
+
+Tooltip Enum Fields are great for:
+
+- Making selection fields more informative
+- Ensuring consistent value usage
+- Helping editors understand field purpose at a glance
+- Improving UX with tooltips and defaults
 
 
 

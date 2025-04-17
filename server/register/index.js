@@ -27,4 +27,11 @@ module.exports = ({ strapi }) => {
     plugin: 'superfields',
     type: "boolean",
   })
+
+
+  strapi.customFields.register({
+    name:'tooltip-enum-field',
+    plugin: 'superfields',
+    type: "string",
+  })
 };
