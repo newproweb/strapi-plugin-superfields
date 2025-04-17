@@ -1,10 +1,10 @@
-import { Discuss } from "@strapi/icons";
+import { Text } from "@strapi/icons";
 
 export default {
   name: "comment",
   pluginId: "superfields",
   type: "text",
-  icon: Discuss,
+  icon: Text,
   components: { Input: async () => import("../../components/comment.js") },
   intlLabel: {
     id: "superfields.field.comment.label",
