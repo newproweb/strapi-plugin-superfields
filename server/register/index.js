@@ -34,4 +34,10 @@ module.exports = ({ strapi }) => {
     plugin: 'superfields',
     type: "string",
   })
+
+  strapi.customFields.register({
+    name:'multi-select',
+    plugin: 'superfields',
+    type: "string",
+  })
 };

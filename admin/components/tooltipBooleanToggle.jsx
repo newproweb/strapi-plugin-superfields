@@ -4,7 +4,6 @@ import {
   Tooltip,
   Field,
   Flex,
-  Typography,
   DesignSystemProvider,
   lightTheme,
   darkTheme,
