@@ -28,7 +28,6 @@ This plugin adds list of new custom fields in strapi to make the content editing
 ---
 
 
-## Added Custom Fields
 
 ## 🔗 Fields
 
@@ -37,6 +36,7 @@ This plugin adds list of new custom fields in strapi to make the content editing
 - [Tooltip Number Input Field](#3-tooltip-number-input-field)
 - [Boolean Field](#4-boolean-field)
 - [Tooltip Enum Field](#5-tooltip-enum-field)
+- [Tooltip Multi Select Field](#6-tooltip-multi-select-field)
 
 
 ---
@@ -281,6 +281,7 @@ As shown above:
 
 ---
 
+
 #### 🤔 Why Use Tooltip Enum Field?
 
 Tooltip Enum Fields are great for:
@@ -290,6 +291,75 @@ Tooltip Enum Fields are great for:
 - Helping editors understand field purpose at a glance
 - Improving UX with tooltips and defaults
 
+
+
+### 6. Tooltip Multi Select Field
+
+✔️ This powerful custom field combines **tooltip support** with various selection modes, giving editors a flexible and guided way to choose values.  
+🎯 Depending on the selected mode, the field can behave as a **Multi Select**, **Single Select**, **Combobox**, or **Nested Multi Select**.  
+📌 Especially useful when editors need structured selections while being guided with tooltips.
+
+⚠️ This field is for **editorial use only** — tooltip messages are **not included in the API response**.
+
+---
+
+#### ⚙️ Field Configuration
+
+The Tooltip Multi Select Field includes highly customizable options:
+
+![Tooltip Multi Select Config](./docs/images/multiselect-settings.jpg)
+
+- **Name** – The name of the field (used in the API)
+- **Select Type** – Defines how the input behaves. Options:
+  - `multi-select`
+  - `single-select`
+  - `combobox`
+  - `nested-multi-select`
+- **Options List** – The values to choose from (simple list or nested tree, depending on the mode)
+- **Tooltip Message** – Help text shown via tooltip (ℹ️ icon)
+- **Field Description** – Optional description displayed under the input
+- **Default Value** – One or more preselected values (based on mode)
+
+---
+
+#### 🧠 Advanced Settings
+
+Take control over validation and visibility:
+
+![Tooltip Multi Select Advanced](./docs/images/multiselect-advanced.jpg)
+
+- **Private Field** – Field will be hidden in API responses
+- **Required Field** – Must be filled before submission
+- **Unique Field** – Ensures the selection is unique across all entries
+
+---
+
+#### ✅ How It Looks
+
+Each select type adapts its UI accordingly in the Content Manager:
+
+- `Multi Select` – Allows selecting multiple values
+- `Single Select` – Dropdown with only one selectable value
+- `Combobox` – Combines search + selection
+- `Nested Multi Select` – Enables hierarchical selection from parent/child nodes
+
+![Tooltip Multi Select Result](./docs/images/multiselect-result.jpg)
+
+As shown:
+
+- The field label, description, and tooltip make it editor-friendly
+- Flexible input styles suit a variety of use cases
+
+---
+
+#### 🤔 Why Use Tooltip Multi Select Field?
+
+This field is perfect for scenarios where editors:
+
+- Need guided input with contextual help
+- Must select from complex, structured options
+- Require flexibility between single and multiple selection types
+- Benefit from improved clarity via tooltips and inline documentation
 
 
 

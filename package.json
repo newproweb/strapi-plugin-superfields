@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-superfields",
-  "version": "5.5.2",
+  "version": "5.6.2",
   "description": "Enhance your components with super fields",
   "strapi": {
     "name": "superfields",
