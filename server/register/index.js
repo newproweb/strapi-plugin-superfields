@@ -35,4 +35,10 @@ module.exports = ({ strapi }) => {
     plugin: 'superfields',
     type: "text",
   })
+
+  strapi.customFields.register({
+    name:'tooltip-datetime-field',
+    plugin: 'superfields',
+    type: "date",
+  })
 };

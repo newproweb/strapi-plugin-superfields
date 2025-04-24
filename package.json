@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-superfields",
-  "version": "4.6.2",
+  "version": "4.7.2",
   "description": "Enhance your components with super fields",
   "strapi": {
     "name": "superfields",
@@ -29,5 +29,8 @@
     "node": ">=12.x. <=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react-datepicker": "^8.3.0"
+  }
 }

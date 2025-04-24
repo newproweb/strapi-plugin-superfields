@@ -14,7 +14,7 @@ This plugin adds list of new custom fields in strapi to make the content editing
 - [Boolean Field](#4-boolean-field)
 - [Tooltip Enum Field](#5-tooltip-enum-field)
 - [Tooltip Multi Select Field](#6-tooltip-multi-select-field)
-
+- [Tooltip Date Time Picker Field](#7-tooltip-date-time-picker-field)
 
 ---
 
@@ -335,6 +335,67 @@ This field is perfect for scenarios where editors:
 - Must select from complex, structured options
 - Require flexibility between single and multiple selection types
 - Benefit from improved clarity via tooltips and inline documentation
+
+
+
+### 7. Tooltip Date Time Picker Field
+
+✔️ This custom field allows editors to **select date and time** with the help of tooltips and descriptions.  
+🎯 Useful for scheduling content, setting deadlines, or storing event times — all while guiding users with contextual help.  
+📌 Combines Strapi-friendly UX with rich configuration options.
+
+⚠️ This field is for **editorial use only** — tooltip messages are **not included in the API response**.
+
+---
+
+#### ⚙️ Field Configuration
+
+The Tooltip Date Time Picker includes intuitive configuration options:
+
+![Tooltip Date Time Config](./docs/images/datetime-config.jpg)
+
+- **Name** – Field label shown in the admin panel  
+- **Tooltip Message** – Contextual help shown via tooltip icon (ℹ️)  
+- **Field Description** – Optional small text displayed under the input  
+- **Default Value** – Optional default date/time value  
+
+---
+
+#### 🧠 Advanced Settings
+
+You can enhance field behavior and validation with these advanced options:
+
+![Tooltip Date Time Advanced](./docs/images/datetime-advanced.jpg)
+
+- **Private Field** – Will be hidden from API responses  
+- **Required Field** – Must be filled before submitting the form  
+- **Unique Field** – Ensures no duplicates across entries  
+
+---
+
+#### ✅ How It Looks
+
+Here’s how the Tooltip Date Time Picker appears in the Content Editor:
+
+![Tooltip Date Time Result](./docs/images/datetime-result.jpg)
+
+As you can see:
+
+- The field includes a clear label and optional description  
+- A tooltip icon (`ℹ️`) shows helpful info when hovered  
+- A calendar + clock picker provides intuitive date/time selection  
+- Default values and clearable input improve UX  
+
+---
+
+#### 🤔 Why Use Tooltip Date Time Picker?
+
+This field is ideal when editors need to:
+
+- Set future publish dates or deadlines  
+- Choose times for scheduled events or reminders  
+- Understand the meaning of the timestamp via tooltips  
+- Improve accuracy with a calendar-based UI
 
 
 
