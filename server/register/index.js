@@ -47,4 +47,11 @@ module.exports = ({ strapi }) => {
     plugin: 'superfields',
     type: "date",
   })
+
+
+  strapi.customFields.register({
+    name:'tooltip-color-picker',
+    plugin: 'superfields',
+    type: "string",
+  })
 };
