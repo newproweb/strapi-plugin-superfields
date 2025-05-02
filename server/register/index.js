@@ -1,7 +1,8 @@
 "use strict";
 
 
-module.exports = ({ strapi }) => {
+module.exports = async ({ strapi }) => {
+
   strapi.customFields.register({
     name: "comment",
     plugin: "superfields",
@@ -41,4 +42,15 @@ module.exports = ({ strapi }) => {
     plugin: 'superfields',
     type: "date",
   })
+
+
+  strapi.customFields.register({
+    name:'tooltip-color-picker',
+    plugin: 'superfields',
+    type: "text",
+  })
+
+  
+
+
 };

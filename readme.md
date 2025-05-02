@@ -15,8 +15,14 @@ This plugin adds list of new custom fields in strapi to make the content editing
 - [Tooltip Enum Field](#5-tooltip-enum-field)
 - [Tooltip Multi Select Field](#6-tooltip-multi-select-field)
 - [Tooltip Date Time Picker Field](#7-tooltip-date-time-picker-field)
+- [Tooltip Color Picker Field](#8-tooltip-color-picker-field)
+
 
 ---
+
+<details>
+
+<summary>Comment Field</summary>
 
 ### 1. Comment Field
 
@@ -33,9 +39,15 @@ This plugin adds list of new custom fields in strapi to make the content editing
 ✅ Results this
 ![Comment Result](https://github.com/newproweb/strapi-plugin-superfields/blob/master/docs/images/Comment-Result.PNG?raw=true)
 
+</details>
 
+
+<details>
+
+<summary>Tooltip Input Field</summary>
 
 ### 2. Tooltip Input Field
+
 
 ✔️ This custom field allows you to display **tooltips** on input fields directly in the Content Manager.  
 🎯 Tooltips help explain the purpose of a field, providing inline documentation and improving content editor usability.  
@@ -81,7 +93,12 @@ Tooltip Input Field let you:
 - Clarify business rules or formatting
 - Improve content accuracy and consistency
 - Reduce confusion for complex or optional fields
+</details>
 
+
+<details>
+
+<summary>Tooltip Number Input Field</summary>
 
 ### 3. Tooltip Number Input Field
 
@@ -145,7 +162,11 @@ Using this field can improve your content editing experience by:
 - Supporting validations to enforce rules
 - Enhancing usability through better documentation directly in the form
 
+</details>
 
+<details>
+
+<summary>Boolean Field</summary>
 
 ### 4. Boolean Field
 
@@ -204,10 +225,15 @@ Boolean Fields help you:
 - Improve editor clarity with description + default value
 - Simplify conditional logic in content workflows
 
+</details>
 
 
+<details>
+
+<summary>Tooltip Enum Field</summary>
 
 ### 5. Tooltip Enum Field
+
 
 ✔️ This custom field allows you to define **enum values with tooltip support** directly in the Content Manager.  
 🎯 Useful for selecting predefined options while providing inline guidance to editors.  
@@ -266,7 +292,12 @@ Tooltip Enum Fields are great for:
 - Helping editors understand field purpose at a glance
 - Improving UX with tooltips and defaults
 
+</details>
 
+
+<details>
+
+<summary>Tooltip Multi Select Field</summary>
 
 ### 6. Tooltip Multi Select Field
 
@@ -336,9 +367,14 @@ This field is perfect for scenarios where editors:
 - Require flexibility between single and multiple selection types
 - Benefit from improved clarity via tooltips and inline documentation
 
+</details>
 
+<details>
 
-### 7. Tooltip Date Time Picker Field
+<summary>Tooltip Date Time Picker Field</summary>
+
+>### 7. Tooltip Date Time Picker Field
+
 
 ✔️ This custom field allows editors to **select date and time** with the help of tooltips and descriptions.  
 🎯 Useful for scheduling content, setting deadlines, or storing event times — all while guiding users with contextual help.  
@@ -396,6 +432,78 @@ This field is ideal when editors need to:
 - Choose times for scheduled events or reminders  
 - Understand the meaning of the timestamp via tooltips  
 - Improve accuracy with a calendar-based UI
+</details>
+
+
+
+<details>
+<summary>
+Tooltip Color Picker Field
+</summary>
+
+### 8. Tooltip Color Picker Field
+
+
+✔️ This custom field allows editors to **select a color** from a predefined list or a color picker — with tooltip and description support.  
+🎯 Perfect for selecting visual attributes like theme colors, status indicators, or branding elements.  
+📌 It provides both a color name (e.g. `Primary`) and visual color swatch, improving clarity and usability for editors.
+
+⚠️ This field is for **editorial use only** — tooltip messages are **not included in the API response**.
+
+---
+
+#### ⚙️ Field Configuration
+
+The Tooltip Color Picker supports flexible setup:
+
+![Tooltip Color Picker Config](./docs/images/colorpicker-config.jpg)
+
+- **Name** – Field label displayed in admin panel  
+- **Tooltip Message** – Contextual help shown via tooltip (ℹ️)  
+- **Field Description** – Optional short text under the input  
+- **Color List** – JSON-style list of `{ name, hex }` entries  
+- **Default Value** – Optional default color (can be name or hex)  
+- **Enable Color Picker** – Toggle to allow manual hex color picking
+
+---
+
+#### 🧠 Advanced Settings
+
+Additional settings for validation and behavior:
+
+![Tooltip Color Picker Advanced](./docs/images/colorpicker-advanced.jpg)
+
+- **Private Field** – Will not be returned in the API  
+- **Required Field** – Must be selected before saving  
+- **Unique Field** – Ensures uniqueness across all entries  
+
+---
+
+#### ✅ How It Looks
+
+Here’s how the field appears inside the Content Manager:
+
+![Tooltip Color Picker Result](./docs/images/colorpicker-result.jpg)
+
+Features include:
+
+- Tooltip help via icon  
+- Predefined colors with visual swatch and name  
+- Optional hex input via color picker  
+- Default color pre-selected (if configured)
+
+---
+
+#### 🤔 Why Use Tooltip Color Picker Field?
+
+This field is a great fit for:
+
+- Selecting theme or status colors consistently  
+- Reducing input errors by limiting color choices  
+- Letting editors quickly recognize colors visually  
+- Offering flexibility via optional hex picker
+
+</details>
 
 
 

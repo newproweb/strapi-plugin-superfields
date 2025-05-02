@@ -5,5 +5,6 @@ import tooltipBooleanField from "./tooltip-boolean-toggle/index.js";
 import tooltipEnumField from "./tooltip-enum-select/index.js";
 import multiSelectField from "./multi-select/index.js";
 import tooltipDateTimeField from "./date-time-picker/index.js";
+import tooltipColorPickerField from "./color-picker/index.js";
 
-export default [commentField, tooltipTextField, tooltipNumberField, tooltipBooleanField, tooltipEnumField, multiSelectField, tooltipDateTimeField];
+export default [commentField, tooltipTextField, tooltipNumberField, tooltipBooleanField, tooltipEnumField, multiSelectField, tooltipDateTimeField, tooltipColorPickerField];
