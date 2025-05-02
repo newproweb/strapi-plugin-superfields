@@ -56,7 +56,7 @@ const DateTimePicker = ({ name, value, onChange,error,attribute,  required }) =>
   return (
     <Field.Root id={name} error={error} hint={description}>
 
-    <Flex alignItems="center" gap={1} style={{ marginBottom: "5px" }}>
+      <Flex alignItems="center" gap={1} style={{ marginBottom: "5px" }}>
       <Field.Label>{name}</Field.Label>
 
         {tooltipContent && (
